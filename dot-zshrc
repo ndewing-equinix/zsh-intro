@@ -2,16 +2,16 @@
 #  Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
-# Uzing Zap to source custom files
-plug "$HOME/.zsh/aliases.zsh"
-plug "$HOME/.zsh/prompt.zsh"
-plug "$HOME/.zsh/functions.zsh"
-
 # Plugins
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 # plug "zap-zsh/zap-prompt" # A good prompt, but I prefer Starship
 plug "zsh-users/zsh-syntax-highlighting"
+
+# Uzing Zap to source custom files
+plug "$HOME/.zsh/aliases.zsh"
+plug "$HOME/.zsh/prompt.zsh"
+plug "$HOME/.zsh/functions.zsh"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -29,3 +29,9 @@ SAVEHIST=5000
 setopt APPEND_HISTORY 
 setopt SHARE_HISTORY  
 setopt HIST_IGNORE_ALL_DUPS
+
+# fzf integration - adds <CTRL-t>, <ALT-c>, and <CTRL-r> bindings
+if command -v fzf &> /dev/null; then
+  eval "$(fzf --zsh)"
+fi 
+
