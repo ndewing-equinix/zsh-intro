@@ -1,7 +1,6 @@
 # Shortened commands
 alias g='git'
 alias h='history'
-alias gr='grep'
 
 # ls
 alias ls='eza -a --group-directories-first'

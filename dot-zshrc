@@ -30,7 +30,7 @@ setopt APPEND_HISTORY
 setopt SHARE_HISTORY  
 setopt HIST_IGNORE_ALL_DUPS
 
-# fzf integration - adds <CTRL-t>, <ALT-c>, and <CTRL-r> bindings
+# fzf integration - adds/changes <CTRL-t>, <ALT-c>, and <CTRL-r> bindings
 if command -v fzf &> /dev/null; then
   eval "$(fzf --zsh)"
 fi 
