@@ -6,9 +6,9 @@ This repo serves a starting point for creating a shell workflow with Zshell at t
 1. ZSH
 2. A Terminal Emulator
 3. [Zap - ZSH plugin manager](https://github.com/zap-zsh/zap)
-  * Installation: `zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1`
+    * Installation: `zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1`
 4. [A Nerd Font](https://www.nerdfonts.com/font-downloads)
-  * FiraCode or DejaVuSansM are my suggestions, but you do you.
+   * FiraCode or DejaVuSansM are my suggestions, but you do you.
 
 ### Optional, but really nice to have
 1. Tmux
