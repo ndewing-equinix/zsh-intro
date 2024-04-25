@@ -22,12 +22,12 @@ This repo serves a starting point for creating a shell workflow with Zshell at t
 brew install tmux neovim starship fzf eza stow
 ```
 
-### FZF Highlights
-* <CTRL-t> Fuzzy find all files and subdirectrories of the working directory, and output the section to STDOUT.
-* <ALT-c> Fuzzy find all subdirectories of the working directory, and run the command “cd” with the output as argument.
-  * <ALT-c> fix for iTerm users: https://github.com/junegunn/fzf/issues/164
-* <CTRL-R> Fuzzy find through your shell history, and output the selection to STDOUT.
+## FZF Highlights
+* `<CTRL-t>` Fuzzy find all files and subdirectrories of the working directory, and output the section to STDOUT.
+* `<ALT-c>` Fuzzy find all subdirectories of the working directory, and run the command “cd” with the output as argument.
+  * `<ALT-c>` fix for iTerm users: https://github.com/junegunn/fzf/issues/164
+* `<CTRL-R>` Fuzzy find through your shell history, and output the selection to STDOUT.
 
-## Additional Resources (okay-list)
+## Okay-List of Additional Resources
 * [zsh-lovers](https://man.archlinux.org/man/zsh-lovers.1)
 * [A Practical Guide to fzf: Shell Integration](https://thevaluable.dev/fzf-shell-integration/)
