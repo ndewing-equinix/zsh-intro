@@ -17,9 +17,13 @@ plug "$HOME/.zsh/functions.zsh"
 autoload -Uz compinit
 compinit
 
+# Load zmv - Zshell's smart file renamer
+autoload -U zmv
+
 # Use Emacs style bindings
 bindkey -e
-export EDITOR=$(which vim)
+bindkey '[C' forward-word # <ALT-C> forward word
+bindkey '[D' backward-word # <ALT-D> backward word
 
 # History options
 HISTFILE=~/.histfile
@@ -30,11 +34,10 @@ setopt APPEND_HISTORY
 setopt SHARE_HISTORY  
 setopt HIST_IGNORE_ALL_DUPS
 
-# Load zmv - Zshell's smart file renamer
-autoload -U zmv
+# Exports
+export EDITOR=$(which vim)
 
 # fzf integration - adds/changes <CTRL-t>, <ALT-c>, and <CTRL-r> bindings
 if command -v fzf &> /dev/null; then
   eval "$(fzf --zsh)"
 fi 
-
