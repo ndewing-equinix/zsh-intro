@@ -8,7 +8,7 @@ plug "zap-zsh/supercharge"
 # plug "zap-zsh/zap-prompt" # A good prompt, but I prefer Starship
 plug "zsh-users/zsh-syntax-highlighting"
 
-# Uzing Zap to source custom files
+# Using Zap to source custom files
 plug "$HOME/.zsh/aliases.zsh"
 plug "$HOME/.zsh/prompt.zsh"
 plug "$HOME/.zsh/functions.zsh"
