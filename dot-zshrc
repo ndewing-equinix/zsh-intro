@@ -29,6 +29,8 @@ bindkey '[D' backward-word # <ALT-D> backward word
 HISTFILE=~/.histfile
 HISTSIZE=5000
 SAVEHIST=5000
+# Don't save certain commands to history, like ones that contain secrets.
+HISTORY_IGNORE="(*KEY*:*SECRET*:*PASSWORD*)"
 # zsh sessions share history, ignoring duplicates.
 setopt APPEND_HISTORY 
 setopt SHARE_HISTORY  
@@ -38,6 +40,6 @@ setopt HIST_IGNORE_ALL_DUPS
 export EDITOR=$(which vim)
 
 # fzf integration - adds/changes <CTRL-t>, <ALT-c>, and <CTRL-r> bindings
-if command -v fzf &> /dev/null; then
+if (( $+commands[fzf] )); then
   eval "$(fzf --zsh)"
 fi 

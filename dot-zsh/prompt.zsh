@@ -1,5 +1,5 @@
 # Prompt customizations
-if command -v starship &> /dev/null; then
+if (( $+commands[starship] )); then
   eval "$(starship init zsh)"
 else
   # If Starship isn't available, a prompt using native ZSH modules
